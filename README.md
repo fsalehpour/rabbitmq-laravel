@@ -1,0 +1,1 @@
+AMQP Lib wrapper to use in Laravel alongside RabbitMQ

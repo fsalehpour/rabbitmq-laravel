@@ -28,6 +28,5 @@
         "psr-4": {
             "Fsalehpour\\RabbitMQ\\": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }

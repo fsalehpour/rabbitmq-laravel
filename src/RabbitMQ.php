@@ -16,7 +16,8 @@ class RabbitMQ
     {
         $this->connection = new AMQPStreamConnection(
             env('RABBITMQ_HOST', 'localhost'), env('RABBITMQ_PORT', 5672),
-            env('RABBITMQ_USER', 'guest'), env('RABBITMQ_PASS', 'guest')
+            env('RABBITMQ_USER', 'guest'), env('RABBITMQ_PASS', 'guest'),
+            env('RABBITMQ_VHOST', '/')
         );
     }
 
@@ -35,7 +36,6 @@ class RabbitMQ
         $ch = is_null($channel) ? $this->channel() : $channel;
         $response = true;
         $ch->set_ack_handler(function (AMQPMessage $msg) use (&$response) {
-            Log::info('ack received');
             $response = $response && true;
         });
         $ch->set_nack_handler(function (AMQPMessage $msg) use (&$response) {

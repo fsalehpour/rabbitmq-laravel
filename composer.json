@@ -1,6 +1,7 @@
 {
     "name": "fsalehpour/rabbitmq-laravel",
     "description": "AMQP Lib wrapper to use in Laravel alongside RabbitMQ",
+    "minimum-stability": "dev",
     "keywords": [
         "laravel",
         "laravel5",
@@ -22,7 +23,8 @@
     ],
     "require": {
         "php-amqplib/php-amqplib": "*",
-        "illuminate/support": "*"
+        "illuminate/support": "*",
+        "fsalehpour/rabbitmq-wrapper": "*"
     },
     "autoload" : {
         "psr-4": {

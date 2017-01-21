@@ -30,7 +30,7 @@ class AMQPFacade extends Facade
         $channel->basic_publish($msg, $exchange, $routing_key);
 
         while (!$response) {
-            $channel->wait(null, false, env('RABBITMQ_TIMEOUT', 10));
+            $channel->wait(null, false, env('RABBITMQ_TIMEOUT', 0));
         }
 
         return $response;

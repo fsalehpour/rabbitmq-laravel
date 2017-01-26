@@ -7,7 +7,7 @@ use PhpAmqpLib\Message\AMQPMessage;
 
 class AMQPFacade extends Facade
 {
-    public static function basic_publish_with_response($channel, $exchange, $routing_key, $body, $headers = [])
+    public static function basicPublishWithResponse($channel, $exchange, $routing_key, $body, $headers = [])
     {
         $response = null;
         $corr_id = uniqid();
@@ -30,7 +30,7 @@ class AMQPFacade extends Facade
         $channel->basic_publish($msg, $exchange, $routing_key);
 
         while (!$response) {
-            $channel->wait(null, false, env('RABBITMQ_TIMEOUT', 0));
+            $channel->wait(null, false, env('RABBITMQ_TIMEOUT', 1));
         }
 
         return $response;
@@ -40,5 +40,4 @@ class AMQPFacade extends Facade
     {
         return 'AMQP';
     }
-
 }

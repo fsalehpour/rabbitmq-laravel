@@ -24,10 +24,14 @@ class RabbitMQProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('AMQP', function($app) {
-            return new RabbitMQ(env('RABBITMQ_HOST', 'localhost'), env('RABBITMQ_PORT', 5672),
-                env('RABBITMQ_USER', 'guest'), env('RABBITMQ_PASS', 'guest'),
-                env('RABBITMQ_VHOST', '/'));
+        $this->app->singleton('AMQP', function ($app) {
+            return new RabbitMQ(
+                env('RABBITMQ_HOST', 'localhost'),
+                env('RABBITMQ_PORT', 5672),
+                env('RABBITMQ_USER', 'guest'),
+                env('RABBITMQ_PASS', 'guest'),
+                env('RABBITMQ_VHOST', '/')
+            );
         });
     }
 }

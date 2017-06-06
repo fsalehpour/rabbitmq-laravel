@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0fbf1fd6eb0124deec704075625c3bfa",
     "content-hash": "e425ec52c0db4464dff9075163f9ac86",
     "packages": [
         {
@@ -80,16 +79,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsalehpour/rabbitmq-wrapper.git",
-                "reference": "048855aa0f715932d66dc97fb216ebe047270e92"
+                "reference": "95a1b8de7d791305325e66e3985c2dc036b69b3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsalehpour/rabbitmq-wrapper/zipball/048855aa0f715932d66dc97fb216ebe047270e92",
-                "reference": "048855aa0f715932d66dc97fb216ebe047270e92",
+                "url": "https://api.github.com/repos/fsalehpour/rabbitmq-wrapper/zipball/95a1b8de7d791305325e66e3985c2dc036b69b3c",
+                "reference": "95a1b8de7d791305325e66e3985c2dc036b69b3c",
                 "shasum": ""
             },
             "require": {
-                "php-amqplib/php-amqplib": "^2.6"
+                "ext-sockets": "*",
+                "php-amqplib/php-amqplib": "^2.7"
             },
             "type": "library",
             "autoload": {
@@ -108,7 +108,7 @@
                 }
             ],
             "description": "A wrapper for RabbitMQ",
-            "time": "2017-01-20 07:47:02"
+            "time": "2017-06-06 08:55:01"
         },
         {
             "name": "illuminate/contracts",
@@ -116,12 +116,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "975a9815dc8a07462636f22f022ffce5dbb672e4"
+                "reference": "548b2ee0baf40e534384acf799c028eb3f143e17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/975a9815dc8a07462636f22f022ffce5dbb672e4",
-                "reference": "975a9815dc8a07462636f22f022ffce5dbb672e4",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/548b2ee0baf40e534384acf799c028eb3f143e17",
+                "reference": "548b2ee0baf40e534384acf799c028eb3f143e17",
                 "shasum": ""
             },
             "require": {
@@ -150,7 +150,7 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2017-01-16 21:42:19"
+            "time": "2017-06-01 20:31:25"
         },
         {
             "name": "illuminate/support",
@@ -158,12 +158,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "d7a674efbe09ec2321fe04d63f9bf00c6f5eb7ea"
+                "reference": "495af24f0fa9820164ab52ee06299544ca504f38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/d7a674efbe09ec2321fe04d63f9bf00c6f5eb7ea",
-                "reference": "d7a674efbe09ec2321fe04d63f9bf00c6f5eb7ea",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/495af24f0fa9820164ab52ee06299544ca504f38",
+                "reference": "495af24f0fa9820164ab52ee06299544ca504f38",
                 "shasum": ""
             },
             "require": {
@@ -177,8 +177,8 @@
             },
             "suggest": {
                 "illuminate/filesystem": "Required to use the composer class (5.2.*).",
-                "symfony/process": "Required to use the composer class (~3.2).",
-                "symfony/var-dumper": "Required to use the dd function (~3.2)."
+                "symfony/process": "Required to use the composer class (~3.3).",
+                "symfony/var-dumper": "Required to use the dd function (~3.3)."
             },
             "type": "library",
             "extra": {
@@ -206,7 +206,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2017-01-17 14:21:52"
+            "time": "2017-06-03 15:05:43"
         },
         {
             "name": "php-amqplib/php-amqplib",
@@ -214,12 +214,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-amqplib/php-amqplib.git",
-                "reference": "cb0433a8d1ab2d7952ae02bc7433ad181a0f1446"
+                "reference": "e2a5074a096b3e9b9819964341c561dce5412be2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/cb0433a8d1ab2d7952ae02bc7433ad181a0f1446",
-                "reference": "cb0433a8d1ab2d7952ae02bc7433ad181a0f1446",
+                "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/e2a5074a096b3e9b9819964341c561dce5412be2",
+                "reference": "e2a5074a096b3e9b9819964341c561dce5412be2",
                 "shasum": ""
             },
             "require": {
@@ -276,7 +276,7 @@
                 "queue",
                 "rabbitmq"
             ],
-            "time": "2017-01-19 06:12:15"
+            "time": "2017-05-22 23:56:32"
         }
     ],
     "packages-dev": [],

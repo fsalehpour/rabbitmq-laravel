@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e425ec52c0db4464dff9075163f9ac86",
+    "content-hash": "b96d026f518c99e1ceb55727c39c2ada",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -12,29 +12,29 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "803a2ed9fea02f9ca47cd45395089fe78769a392"
+                "reference": "6dcae3aee85691db6df6e91e3b5e10911429516c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/803a2ed9fea02f9ca47cd45395089fe78769a392",
-                "reference": "803a2ed9fea02f9ca47cd45395089fe78769a392",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/6dcae3aee85691db6df6e91e3b5e10911429516c",
+                "reference": "6dcae3aee85691db6df6e91e3b5e10911429516c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": "^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.*"
+                "phpunit/phpunit": "^6.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Inflector\\": "lib/"
+                "psr-4": {
+                    "Doctrine\\Common\\Inflector\\": "lib/Doctrine/Common/Inflector"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -71,7 +71,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2016-05-12 17:23:41"
+            "time": "2017-06-08 15:16:24"
         },
         {
             "name": "fsalehpour/rabbitmq-wrapper",
@@ -79,16 +79,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsalehpour/rabbitmq-wrapper.git",
-                "reference": "95a1b8de7d791305325e66e3985c2dc036b69b3c"
+                "reference": "c13d563a3fcac6189225340ea3e4228ba958df9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsalehpour/rabbitmq-wrapper/zipball/95a1b8de7d791305325e66e3985c2dc036b69b3c",
-                "reference": "95a1b8de7d791305325e66e3985c2dc036b69b3c",
+                "url": "https://api.github.com/repos/fsalehpour/rabbitmq-wrapper/zipball/c13d563a3fcac6189225340ea3e4228ba958df9f",
+                "reference": "c13d563a3fcac6189225340ea3e4228ba958df9f",
                 "shasum": ""
             },
             "require": {
-                "ext-sockets": "*",
                 "php-amqplib/php-amqplib": "^2.7"
             },
             "type": "library",
@@ -108,7 +107,7 @@
                 }
             ],
             "description": "A wrapper for RabbitMQ",
-            "time": "2017-06-06 08:55:01"
+            "time": "2017-06-11 07:40:27"
         },
         {
             "name": "illuminate/contracts",
@@ -116,12 +115,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "548b2ee0baf40e534384acf799c028eb3f143e17"
+                "reference": "682713dac3664e1f273c0900ac19cdbef5a4ab2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/548b2ee0baf40e534384acf799c028eb3f143e17",
-                "reference": "548b2ee0baf40e534384acf799c028eb3f143e17",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/682713dac3664e1f273c0900ac19cdbef5a4ab2a",
+                "reference": "682713dac3664e1f273c0900ac19cdbef5a4ab2a",
                 "shasum": ""
             },
             "require": {
@@ -150,7 +149,7 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2017-06-01 20:31:25"
+            "time": "2017-06-08 13:05:39"
         },
         {
             "name": "illuminate/support",
@@ -158,12 +157,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "495af24f0fa9820164ab52ee06299544ca504f38"
+                "reference": "8a1b03e4be6f183836684ee73d4d4c817ac7ce6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/495af24f0fa9820164ab52ee06299544ca504f38",
-                "reference": "495af24f0fa9820164ab52ee06299544ca504f38",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/8a1b03e4be6f183836684ee73d4d4c817ac7ce6f",
+                "reference": "8a1b03e4be6f183836684ee73d4d4c817ac7ce6f",
                 "shasum": ""
             },
             "require": {
@@ -206,7 +205,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2017-06-03 15:05:43"
+            "time": "2017-06-08 13:02:12"
         },
         {
             "name": "php-amqplib/php-amqplib",

@@ -22,7 +22,6 @@
         }
     ],
     "require": {
-        "php-amqplib/php-amqplib": "*",
         "illuminate/support": "*",
         "fsalehpour/rabbitmq-wrapper": "*"
     },
